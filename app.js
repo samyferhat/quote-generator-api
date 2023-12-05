@@ -13,33 +13,33 @@ if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {
         // DOM elements
         let btn = document.querySelector('.new-quote');
-        let quote = document.querySelector('.quote');
+        let quoteElement = document.querySelector('.quote');
         let person = document.querySelector('.person');
 
 
-        async function newQuote() {
+        async function updateQuote() {
             // fetch a random quote from the Quotable free API
-            const quote = await fetch("https://api.quotable.io/random")
+            const newQuote = await fetch("https://api.quotable.io/random?tags=technology&maxLength=100")
                 .then(response => response.json())
-                .catch(err => console.log(err));
+                .catch(err => {
+                    console.log(err);
+                    quoteElement.textContent = "An error occured while loading";
+                });
 
-            if (quote.ok) {
-                //Update DOM elements with the data fetched
-                quote.textContent = quote.content;
-                person.textContent = quote.author;
-            } else {
-                quote.textContent = "An error occured while loading";
-                console.log(quote);
-            }
+            //Update DOM elements with the data fetched
+            quoteElement.textContent = newQuote.content;
+            person.textContent = newQuote.author;
+
+
         }
 
         // Attach to the ̀ button` an Event listener 
-        btn.addEventListener("click", newQuote);
+        btn.addEventListener("click", updateQuote);
 
         // call newQuote once when page loaded to print the 
         // first quote 
 
-        newQuote();
+        updateQuote();
 
     });
 } else {

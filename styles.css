@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -15,11 +15,11 @@ body {
     background: url(img/project-1.jpg) no-repeat center center/ cover;
 }
 .container {
-    width: 550px;
+    width: 700px;
     height: 450px;
 }
 .header {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border: solid 2px #fff;
     color: #fff;
     background-color: #262626;
@@ -39,11 +39,11 @@ body {
 }
 
 .main-content .text-area {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.5;
 }
 .main-content .person {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: red;
     text-transform: uppercase;
     margin-top: 20px;
@@ -58,6 +58,10 @@ body {
     border-radius: 5px;
 }
 
+.button-area button:hover {
+    cursor: pointer;
+    background-color: rgb(31, 33, 53);
+}
 .button-area button:active {
     background-color: lightblue;
 }
