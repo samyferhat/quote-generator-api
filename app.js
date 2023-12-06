@@ -19,7 +19,7 @@ if (document.readyState === "loading") {
 
         async function updateQuote() {
             // fetch a random quote from the Quotable free API
-            const newQuote = await fetch("https://api.quotable.io/random?tags=technology&maxLength=100")
+            const newQuote = await fetch("https://api.quotable.io/random?tags=technology&maxLength=120&")
                 .then(response => response.json())
                 .catch(err => {
                     console.log(err);
@@ -27,7 +27,7 @@ if (document.readyState === "loading") {
                 });
 
             //Update DOM elements with the data fetched
-            quoteElement.textContent = newQuote.content;
+            quoteElement.textContent = `" ${newQuote.content} "`;
             person.textContent = newQuote.author;
 
 

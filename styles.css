@@ -1,9 +1,9 @@
-/* General styles */ 
+/* General styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Red Hat Mono', monospace;
 }
 
 body {
@@ -14,16 +14,18 @@ body {
     text-align: center;
     background: url(img/project-1.jpg) no-repeat center center/ cover;
 }
+
 .container {
     width: 700px;
     height: 450px;
 }
+
 .header {
     font-size: 1.5rem;
     border: solid 2px #fff;
     color: #fff;
     background-color: #262626;
-    padding: 5px ;
+    padding: 5px;
     width: 80%;
     margin: 20px auto;
     border-radius: 5px;
@@ -31,22 +33,26 @@ body {
 
 .main-content {
     width: 100%;
-    height: 300px;
+    height: 267px;
     background-color: #fff;
     border-radius: 15px;
-    padding: 50px 40px;
     box-shadow: 0 0 10px;
 }
 
 .main-content .text-area {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 1.5;
+    width: 100%;
+    height: 103px;
+    padding: 20px 20px 20px 20px;
 }
+
 .main-content .person {
     font-size: 1.8rem;
     color: red;
     text-transform: uppercase;
-    margin-top: 20px;
+    height: 63px;
+    padding-top: 20px;
 }
 
 .button-area button {
@@ -54,14 +60,21 @@ body {
     color: #fff;
     font-size: 1.3rem;
     padding: 10px 15px;
-    margin-top: 20px;
     border-radius: 5px;
+    margin: auto;
+    width: 267px;
+}
+
+.button-area {
+    padding-top: 20px;
+    height: 101px;
 }
 
 .button-area button:hover {
     cursor: pointer;
     background-color: rgb(31, 33, 53);
 }
+
 .button-area button:active {
     background-color: lightblue;
 }
