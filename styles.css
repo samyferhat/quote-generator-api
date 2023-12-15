@@ -9,11 +9,24 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     text-align: center;
     background: url(img/project-1.jpg) no-repeat center center/ cover;
 }
+
+footer {
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
 
 .container {
     width: 700px;
