@@ -30,8 +30,8 @@ footer {
 
 .container {
     width: 100%;
-    
-    
+
+
 }
 
 .header {
@@ -95,12 +95,13 @@ footer {
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
-   
+
     .header {
         font-size: 1.3rem;
         width: 300px;
         border-radius: 7px;
     }
+
     .main-content {
         width: 350px;
         height: 400px;
@@ -108,18 +109,21 @@ footer {
         margin: auto;
 
     }
-    .main-content .text-area{
-        height: 200px; 
+
+    .main-content .text-area {
+        height: 200px;
         font-size: 1.3rem;
     }
+
     .main-content .person {
-        
+
         height: 100px;
         padding-top: 40px;
     }
-    
-    
+
+
 }
+
 @media only screen and (max-width: 480px) {
     .header {
         font-size: 1.2rem;
@@ -132,15 +136,16 @@ footer {
         height: 400px;
         background-color: #fff;
         margin: auto;
-
     }
-    .main-content .text-area{
-        height: 200px; 
+
+    .main-content .text-area {
+        height: 200px;
         font-size: 1.3rem;
     }
+
     .main-content .person {
         height: 100px;
         padding-top: 40px;
     }
-    
+
 }
